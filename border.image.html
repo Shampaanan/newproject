@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+#borderimg{
+	border:50px solid black;
+	padding:15px;
+    width: 50%;
+	border-image: url(https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_640.png);
+	border-image-repeat:round ; 
+	border-image-slice: 300;
+	
+}
+#borderimg1{
+	border:50px solid red;
+	padding:15px;
+    width: 50%;
+	border-image: url(https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_640.png) 100 round;
+	border-image-repeat: stretch; 
+	border-image-slice: 110;
+	
+}
+	</style>
+
+</head>
+<body>
+	<h1>The Border-Image Property</h1>
+	<p>Here the middle section of the image are repeated to create the border:</p>
+	<p id="borderimg"> url(https://cdn.pixabay.com/photo/2020/02/27/13/20/butterfly-4884618_960_720.jpg)</p>
+	<p id="borderimg1"> url(https://cdn.pixabay.com/photo/2020/02/27/13/20/butterfly-4884618_960_720.jpg)</p>
+
+</body>
+</html>
